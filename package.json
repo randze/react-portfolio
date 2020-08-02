@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/randze/react-portfolio/issues"
   },
-  "homepage": "https://github.com/randze/react-portfolio#readme"
+  "homepage": "https://github.com/randze/react-portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
