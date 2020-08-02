@@ -1,0 +1,21 @@
+{
+  "name": "react-portfolio",
+  "version": "1.0.0",
+  "description": "Just converted my base portfolio page to use React and React router to switch pages.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randze/react-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randze/react-portfolio/issues"
+  },
+  "homepage": "https://github.com/randze/react-portfolio#readme"
+}
