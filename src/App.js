@@ -1,26 +1,49 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Switch, Route, Link} from 'react-router-dom'
 import './App.css';
+import Home from './components/Home'
+import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
+
+// import project adata
+import projects from './projects.json'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <header>
+                <nav className="navbar text-light">
+                    <span className="navbar-brand mb-0 h1">randze</span>
+                    <ul className="nav justify-content-end">
+                        <li className="nav-item">
+                            <Link className="nav-link" to='/'>About Me</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to='/portfolio'>Portfolio</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to='/contact'>Contact Me</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <Switch>
+                <Route path='/portfolio'>
+                    <Portfolio projects={projects} />
+                </Route>
+                <Route path='/contact'>
+                    <Contact />
+                </Route>
+                <Route path='/'>
+                    <Home />
+                </Route>
+            </Switch>
+            <footer className="text-center align-middle">
+                <span>randze works &trade;</span>
+            </footer>
+        </>
+    );
 }
 
 export default App;
