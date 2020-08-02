@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link async rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link async href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rock+Salt&display=swap" rel="stylesheet">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav id="home" class="navbar text-light">
+            <span class="navbar-brand mb-0 h1">randze</span>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- style="max-width: 720px;" -->
+    <div class="container-fluid justify-content-center">
+        <section class="container">
+            <br>
+            <div id="projects" class="row" data-masonry='{"percentPosition": true }'>
+                <!-- card template -->
+                <!-- <div class="card col-12 col-sm text-center">
+                    <div class="card-header">
+                        <p class="card-text">${name}</p>
+                    </div>
+                    <img src=${img} class="card-img-top" alt="PetHome">
+                    <div class="card-body">
+                        <a href=${github}>${name} <i class="fab fa-github"></i></a>
+                        <br>
+                        <a href=${site}>Site <i class="fas fa-globe"></i></a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </div>
+
+    <!-- spacing -->
+    <br><br>
+
+    <footer class="fixed-bottom text-center align-middle">
+        <span style="color:#fff; font-size:12px;">randze works &trade;</span>
+
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <!-- masonry -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+</body>
+
+</html>
