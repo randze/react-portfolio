@@ -4,6 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
+/client/node_modules
+/client/package-lock.json
+package-lock.json
 
 # testing
 /coverage
@@ -18,6 +21,9 @@
 .env.test.local
 .env.production.local
 .env
+.zip
+.tar
+.tgz
 .vscode/
 
 npm-debug.log*
