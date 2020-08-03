@@ -1,6 +1,10 @@
-import React from 'react';
-import {Switch, Route, Link} from 'react-router-dom'
-import './App.css';
+import React from 'react'
+import {Switch, Route, link} from 'react-router-dom'
+import './App.css'
+
+// components
+// import Header from './components/Header'
+import Footer from './components/Footer'
 import Home from './components/Home'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
@@ -39,9 +43,7 @@ function App() {
                     <Home />
                 </Route>
             </Switch>
-            <footer className="text-center align-middle">
-                <span>randze works &trade;</span>
-            </footer>
+            <Footer />
         </>
     );
 }
